@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A11Y Assist</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>A11Y Assist</h1>
+  <div id="primaryView">
+    <p>From the accessibility perspective we need to implement following </p>
+    <ul>
+      <li>
+        <b>At least one H1 tag:</b> 
+          The document/webpage must contain at least one H1 tag, which describes the primary content or purpose of the page
+      </li>
+      <li>
+        <b>Title tag:</b>
+        The document/webpage must contain a Title tag
+      </li>
+      <li>
+        <b>Title & H1 relation:</b>
+        The title tag value must contain the h1 tag value. Expected H1 value to be in the title
+      </li>
+    </ul>
+  </div>
+  <button id="scanBtn">Scan for Accessibility</button>
+  <div id="secondaryView">
+    <h2>Results</h2>
+    <div class="close-icon"></div>
+    <ul id="results">
+
+    </ul>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
